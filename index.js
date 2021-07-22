@@ -74,6 +74,12 @@ app.post('/api/notes/', (req, res) => {
   res.status(201).json(newNote)
 })
 
+app.use((req, res) => {
+  res.status(404).json({
+    massage: 'not found'
+  })
+})
+
 const PORT = process.env.PORT || 3001
 
 app.listen(PORT, () => {

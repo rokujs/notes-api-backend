@@ -1,0 +1,14 @@
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+  "content": "Ruby and rails",
+  "name": "yon"
+}
+
+###
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+}
